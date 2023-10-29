@@ -39,7 +39,7 @@ main {
   justify-content: center;
   text-align: center;
   padding: 60px 0;
-  background-color: rgba(0, 0, 0, 0.86);
+  background-color: rgba(0, 0, 0, 0.5);
   border-radius:20px 20px 0px 0px;
   
 
@@ -91,7 +91,7 @@ main {
 .social-media {
   text-align: center;
   padding: 60px 0;
-  background-color: rgba(0, 0, 0, 0.909);
+  background-color: rgba(0, 0, 0, 0.5);
   color: white;
   width: 100%;
   max-width: 100%;
@@ -238,7 +238,7 @@ main {
 .mybio{
   width: 80%;
   font-size: 150%;
-  background-color: #00000065;
+  background-color: rgba(0, 0, 0, 0.3);;
   color: white;
   margin: auto;
   font-family: 'Brush Script MT', cursive;
