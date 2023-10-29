@@ -1,0 +1,413 @@
+	* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+a{
+  text-decoration: none;
+}
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  
+
+}
+
+header {
+  background-color: #000000fb;
+  display: flex;
+  text-align: center;
+  position: static;
+  top: 0px;
+  width: 100%;
+  margin-bottom: 0px;
+  left: 0px;
+  
+}
+
+
+main {
+  max-width: 100%;
+  width: 960px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.profile {
+  display: block;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 60px 0;
+  background-color: rgba(0, 0, 0, 0.86);
+  border-radius:20px 20px 0px 0px;
+  
+
+}
+
+.image-container {
+  position: relative;
+  width: 250px;
+  height: 250px;
+  display: inline-block;
+  overflow: hidden;
+  border-radius: 15px;
+}
+
+.image-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s;
+  
+}
+
+.image-container:hover img {
+  transform: scale(1.1);
+  border-color: #ff0000;
+}
+
+.bio {
+  max-width: 175px;
+  text-align: center;
+  margin: auto;
+  margin-bottom: 0px;
+}
+
+.bio h2 {
+  color: orange;
+  margin-bottom: 20px;
+}
+
+.bio p {
+  transition: color 0.3s;
+  
+}
+
+.social-media h2{
+  color: orange;
+}
+
+.social-media {
+  text-align: center;
+  padding: 60px 0;
+  background-color: rgba(0, 0, 0, 0.909);
+  color: white;
+  width: 100%;
+  max-width: 100%;
+  margin: auto;
+  margin-bottom: 0px;
+  position: relative;
+  top: 0px;
+  left: 0px;
+}
+
+.social-media h2 {
+  margin-bottom: 20px;
+}
+
+.social-icons {
+  justify-content: center;
+  display: inline-block;
+  
+  max-width: 100%;
+}
+.photo1{
+  width: 100%;
+  height: 50%;
+  position: relative;
+  top: 0px;
+  overflow: hidden;
+  border-radius: 50px 20px 20px 20px;
+}
+.photo1 img{
+  width: 100%;
+  height: 100%;
+  transition: transform 0.3s;
+}
+
+.photo1 :hover img{
+  transform: scale(1.5);
+}
+
+.box{
+  width: 45%;
+  height: 50%;
+  background-color: rgba(23, 4, 90, 0.682);
+  display: inline-block;
+  margin: 1.5%;
+  margin-bottom: 1.5%;
+  padding: 1.5%;
+  box-shadow: 5px 5px 8px rgba(0, 0, 255, 0.390), 10px 10px 8px rgba(255, 0, 0, 0.390), 15px 15px 8px rgba(0, 128, 0, 0.390);
+  border-radius: 50px 20px;
+  font-weight: 900
+}
+
+
+
+
+.contact-me {
+  text-align: center;
+  padding: 60px 0;
+  background-color: rgb(69, 52, 116);
+  color: #fff;
+  border-radius: 0px 0px 65px  65px ;
+  margin-bottom: 40%;
+}
+
+.contact-me h2 {
+  margin-bottom: 20px;
+}
+
+.contact-buttons {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+.contact-buttons img {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+}
+
+.btn {
+
+  display: inline-block;
+
+  margin: 0 10px;
+}
+
+.btn:hover {
+  background-color: #555;
+}
+
+.video-bg {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.video-bg video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0px;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+  pointer-events: none;
+}
+
+.videobgcontet {
+  position: relative;
+  z-index: 1; 
+  overflow-y: auto; 
+  max-height: 100vh; 
+}
+#type {
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: .15em solid red;
+    font-size: 24px;
+    animation:  typing-erasing 4s steps(30, end) infinite;
+    color: rgb(73, 188, 31);
+    font-family:  Copperplate, Papyrus, fantasy;
+    margin-bottom: 10%;
+  }
+
+  @keyframes typing-erasing {
+    0% {
+      width: 0;
+    }
+    25% {
+      width: 100%;
+    }
+    50% {
+      width: 100%;
+    }
+    75% {
+      width: 0;
+    }
+    100% {
+      width: 0;
+    }
+  }
+  
+.mybio{
+  width: 80%;
+  font-size: 150%;
+  background-color: #00000065;
+  color: white;
+  margin: auto;
+  font-family: 'Brush Script MT', cursive;
+  
+}
+
+header a {
+  opacity: 0; 
+  animation: appear 7s forwards;
+}
+
+@keyframes appear {
+  0% {
+    opacity: 0; 
+  }
+  50%{
+    color: #ec0602;
+  }
+  100% {
+    opacity: 1; 
+  }
+}
+.title-word {
+  animation: color-animation 2s linear infinite;
+}
+
+.title-word-1 {
+  --color-1: #ff5900;
+  --color-2: #00b3ff;
+  --color-3: #ec0602;
+}
+
+.title-word-2 {
+  --color-1: #ffae00;
+  --color-2: #00ffe1;
+  --color-3: #00eeff;
+  margin-right: 5px;
+}
+
+.title-word-3 {
+  --color-1: #00ffe1;
+  --color-2: #ff0400;
+  --color-3: #00ffe1;
+}
+
+
+
+@keyframes color-animation {
+  0%    {color: var(--color-1)}
+  32%   {color: var(--color-1)}
+  33%   {color: var(--color-2)}
+  65%   {color: var(--color-2)}
+  66%   {color: var(--color-3)}
+  99%   {color: var(--color-3)}
+  100%  {color: var(--color-1)}
+}
+
+
+
+.container {
+  display: grid;
+  place-items: center;  
+  text-align: center;
+}
+
+.title {
+  font-family: "Montserrat", sans-serif;
+  font-size: 140%;
+  text-transform: uppercase;
+}
+header img{
+  margin: 10px;
+  margin-left: 10px;
+}
+header a{
+  margin: 2%;
+  margin-top: 30px; 
+  
+}
+.animate-charcter
+{
+   text-transform: uppercase;
+  background-image: linear-gradient(
+    -225deg,
+    #00ff15 0%,
+    #886aa7 29%,
+    #ff0000 67%,
+    #fff700 100%
+  );
+  font-family: Impact, fantasy;
+  background-size: auto auto;
+  background-clip: border-box;
+  background-size: 200% auto;
+  color: #fff;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: textclip 2s linear infinite;
+  display: inline-block;
+      font-size: 110%;
+}
+
+@keyframes textclip {
+  to {
+    background-position: 200% center;
+  }
+}
+.animate-charcter2
+{
+   text-transform: uppercase;
+  background-image: linear-gradient(
+    -225deg,
+    #4c665a 0%,
+    #816483 29%,
+    #6f7458 67%,
+    #506a4c 100%
+  );
+  font-family: Impact, fantasy;
+  background-size: auto auto;
+  background-clip: border-box;
+  background-size: 200% auto;
+  color: #fff;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: textclip 2s linear infinite;
+  display: inline-block;
+      font-size: 110%;
+}
+
+@keyframes textclip {
+  to {
+    background-position: 200% center;
+  }
+}
+.here{
+  animation: change 2s infinite;
+}
+@keyframes change {
+  0%{color: white;}
+  100%{color: blue;}
+}
+.mybio{
+  animation: 5s anim-popoutin ease forwards;
+}
+
+@keyframes anim-popoutin {
+  0% {
+    color: black;
+    transform: scale(0);
+    opacity: 0;
+    text-shadow: 0 0 0 rgba(0, 0, 0, 0);
+  }
+  25% {
+    color: red;
+    transform: scale(2);
+    opacity: 1;
+    text-shadow: 3px 10px 5px rgba(0, 0, 0, 0.5);
+  }
+  50% {
+    color: black;
+    transform: scale(1);
+    opacity: 1;
+    text-shadow: 1px 0 0 rgba(0, 0, 0, 0);
+  }
+  100% {
+    
+    transform: scale(1);
+    opacity: 1;
+    text-shadow: 1px 0 0 rgba(0, 0, 0, 0);
+  }
+}
