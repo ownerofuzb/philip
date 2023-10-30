@@ -17,12 +17,12 @@ header {
   background-color: #000000fb;
   display: flex;
   text-align: center;
-  position: static;
-  top: 0px;
+  position: fixed; 
+  top: 0;
   width: 100%;
-  margin-bottom: 0px;
-  left: 0px;
-  
+  margin-bottom: 0;
+  left: 0;
+  z-index: 999; 
 }
 
 
