@@ -47,8 +47,10 @@ main {
 
 .image-container {
   position: relative;
-  width: 250px;
-  height: 250px;
+  margin-top: 5%;
+  border: 10px solid black;
+  width: 260px;
+  height: 260px;
   display: inline-block;
   overflow: hidden;
   border-radius: 15px;
