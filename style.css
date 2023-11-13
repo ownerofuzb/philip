@@ -9,9 +9,33 @@ a{
 body {
   font-family: Arial, sans-serif;
   line-height: 1.6;
-  background-image: url("bg/image.png");
+}
+.video-bg {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
 }
 
+.bgimage {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0px;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+  pointer-events: none; /* Disable pointer events on the video */
+}
+
+.videobgcontet {
+  /* Add styling for the content above the video if needed */
+  position: relative;
+  z-index: 1; /* Bring the content above the video */
+  overflow-y: auto; /* Enable vertical scrolling for the content */
+  max-height: 100vh; /* Set a maximum height for the content */
+}
 header {
   background-color: #000000fb;
   display: flex;
